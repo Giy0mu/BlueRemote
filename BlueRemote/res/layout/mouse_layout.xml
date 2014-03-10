@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/butClick"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="Click" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/butScrollUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ScrollUp" />
+
+        <Button
+            android:id="@+id/butScrollDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ScrollDown" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/butClick2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:text="Right-Click" />
+
+</LinearLayout>

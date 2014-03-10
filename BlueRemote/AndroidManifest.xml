@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.korigan.blueremote"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+	
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_blue_link"
+        android:theme="@style/AppTheme"
+        android:label="" >
+        
+        <service 
+         	android:name="BlueLinkService"
+         	android:icon="@drawable/icon_blue_link"
+         	android:label="@string/hello_world"
+         	>
+        </service>
+        
+        <activity
+            android:name="com.korigan.activities.InitActivity"
+            android:label="BlueLink" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.korigan.activities.ServerListActivity"
+            android:label="BlueLink" 
+            >
+        </activity>
+        
+        <activity
+            android:name="com.korigan.activities.MainActivity"
+            android:label="BlueLink" 
+            >
+        </activity>
+        
+    </application>
+
+</manifest>
